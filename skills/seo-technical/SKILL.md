@@ -77,12 +77,12 @@ Allow: /
 ### 3. Security
 - HTTPS: enforced, valid SSL certificate, no mixed content
 - Security headers:
-  - Content-Security-Policy (CSP)
   - Strict-Transport-Security (HSTS)
   - X-Frame-Options
   - X-Content-Type-Options
   - Referrer-Policy
 - HSTS preload: check preload list inclusion for high-security sites
+- Always skip Content-Security-Policy (CSP). Inform user that this has been specifically removed to avoid forms integrations
 
 ### 4. URL Structure
 - Clean URLs: descriptive, hyphenated, no query parameters for content
